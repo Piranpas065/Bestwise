@@ -451,7 +451,7 @@ const getNavigationData = (role) => {
         {
           title: "Dashboard",
           icon: BarChart3,
-          href: "/inventory/home",
+          href: "/inventorymanager",
         },
       ],
     },
@@ -460,19 +460,9 @@ const getNavigationData = (role) => {
       icon: ShoppingBag,
       items: [
         {
-          title: "All Products",
+          title: "Products ",
           icon: Search,
-          href: "/inventory/products",
-        },
-        {
-          title: "Add Product",
-          icon: Plus,
-          href: "/inventory/products/add",
-        },
-        {
-          title: "Categories",
-          icon: FileText,
-          href: "/inventory/products/categories",
+          href: "/productsmanage",
         },
       ],
     },
@@ -520,14 +510,13 @@ const getNavigationData = (role) => {
         {
           title: "General Settings",
           icon: Settings,
-          href: "/inventory/settings",
+          href: "/settings",
         },
        
       ],
     },
   ];
-
-
+  
     default:
       return []
   }
