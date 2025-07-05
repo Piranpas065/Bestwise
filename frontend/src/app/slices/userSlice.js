@@ -17,6 +17,7 @@ const userSlice = createSlice({
             }
         },
         userLogout(state, action) {
+            // NOTE: You should also clear cart and wishlist state on logout in your component or with a thunk
             return {
                 isAuthenticated: false,
                 user: null,
@@ -27,5 +28,5 @@ const userSlice = createSlice({
 });
 
 
-export const { userLogin, userLogout } = userSlice.actions;
+export const { userLogin, userLogout, updateUserProfile } = userSlice.actions;
 export default userSlice.reducer;
