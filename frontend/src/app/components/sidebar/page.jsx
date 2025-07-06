@@ -442,6 +442,80 @@ const getNavigationData = (role) => {
         },
       ]
 
+    case "Inventory Manager":
+  return [
+    {
+      title: "Home",
+      icon: Home,
+      items: [
+        {
+          title: "Dashboard",
+          icon: BarChart3,
+          href: "/inventorymanager",
+        },
+      ],
+    },
+    {
+      title: "Product Management",
+      icon: ShoppingBag,
+      items: [
+        {
+          title: "Products ",
+          icon: Search,
+          href: "/productsmanage",
+        },
+      ],
+    },
+    {
+      title: "Order Management",
+      icon: ClipboardList,
+      items: [
+        {
+          title: "All Orders",
+          icon: ShoppingCart,
+          href: "/inventory/orders",
+        },
+        {
+          title: "Pending Orders",
+          icon: Clock,
+          href: "/inventory/orders/pending",
+        },
+        {
+          title: "Completed Orders",
+          icon: CheckCircle,
+          href: "/inventory/orders/completed",
+        },
+      ],
+    },
+    {
+      title: "Low Stock Alerts",
+      icon: AlertTriangle,
+      items: [
+        {
+          title: "View Low Stock",
+          icon: Eye,
+          href: "/inventory/alerts/low-stock",
+        },
+        {
+          title: "Restock Requests",
+          icon: RefreshCw,
+          href: "/inventory/alerts/restock",
+        },
+      ],
+    },
+    {
+      title: "Settings",
+      icon: Settings,
+      items: [
+        {
+          title: "General Settings",
+          icon: Settings,
+          href: "/settings",
+        },
+       
+      ],
+    },
+  ];
   
     default:
       return []
